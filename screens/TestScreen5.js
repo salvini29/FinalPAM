@@ -61,6 +61,15 @@ export default function TestScreen5 () {
 
     return false;
   };
+  
+  useEffect(() => { 
+      let watch = Geolocation.watchPosition((position) => {
+        console.log(position);
+      },
+      { interval: 1000 }
+      );
+  });
+
 
   const getLocation = async () => {
     const hasPermission = await hasLocationPermission();
@@ -86,7 +95,7 @@ export default function TestScreen5 () {
         },
         timeout: 15000,
         maximumAge: 10000,
-        distanceFilter: 0,
+        distanceFilter: 1,
       },
     );
   };

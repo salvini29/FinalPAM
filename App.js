@@ -11,6 +11,7 @@ import Agregar from './screens/Agregar';
 import Lista from './screens/Lista';
 import TestScreen5 from './screens/TestScreen5';
 import Listas from './screens/Listas';
+import Compartir from './screens/Compartir';
 import ListaCarrito from './components/ListaProductos'
 import { ScrollView } from 'react-native-gesture-handler';
 
@@ -33,6 +34,11 @@ export default function App() {
           activeTintColor: 'red',
           inactiveTintColor: 'gray',
         }} >
+        <Tab.Screen name="Perfil" component={Perfil} options={{
+          tabBarIcon: ({ focused, color, size }) => (
+            <MaterialCommunityIcons name={focused ? 'account' : 'account-outline'} color={color} size={size} />
+          ),
+          }}/>
         <Tab.Screen name="Listas" component={Listas} options={{
           tabBarIcon: ({ focused, color, size }) => (
             <MaterialCommunityIcons name={focused ? 'bank' : 'bank-outline'} color={color} size={size} />
@@ -48,9 +54,9 @@ export default function App() {
             <MaterialCommunityIcons name={focused ? 'pencil-box' : 'pencil-box-outline'} color={color} size={size} />
           ),
           }}/>
-        <Tab.Screen name="Perfil" component={Perfil} options={{
+        <Tab.Screen name="Compartir" component={Compartir} options={{
           tabBarIcon: ({ focused, color, size }) => (
-            <MaterialCommunityIcons name={focused ? 'account' : 'account-outline'} color={color} size={size} />
+            <MaterialCommunityIcons name={focused ? 'share-all' : 'share-all-outline'} color={color} size={size} />
           ),
           }}/>
         <Tab.Screen name="TEST" component={TestScreen5} options={{
