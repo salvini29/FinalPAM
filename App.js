@@ -9,7 +9,7 @@ import Perfil from './screens/Perfil';
 import TestScreen2 from './screens/TestScreen2';
 import Agregar from './screens/Agregar';
 import Lista from './screens/Lista';
-import TestScreen5 from './screens/TestScreen5';
+import Ubicacion from './screens/Ubicacion';
 import Listas from './screens/Listas';
 import Compartir from './screens/Compartir';
 import ListaCarrito from './components/ListaProductos'
@@ -59,9 +59,9 @@ export default function App() {
             <MaterialCommunityIcons name={focused ? 'share-all' : 'share-all-outline'} color={color} size={size} />
           ),
           }}/>
-        <Tab.Screen name="TEST" component={TestScreen5} options={{
+        <Tab.Screen name="Ubicacion" component={Ubicacion} options={{
           tabBarIcon: ({ focused, color, size }) => (
-            <MaterialCommunityIcons name={focused ? 'account' : 'account-outline'} color={color} size={size} />
+            <MaterialCommunityIcons name={focused ? 'map-marker-radius' : 'map-marker-radius-outline'} color={color} size={size} />
           ),
           }}/>
       </Tab.Navigator>
