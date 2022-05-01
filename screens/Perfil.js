@@ -17,7 +17,6 @@ import {
 } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useForm } from 'react-hook-form';
-import TestScreen2 from './TestScreen2';
 import LoginRegisterScreen from './LoginRegisterScreen';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';

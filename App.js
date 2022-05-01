@@ -6,7 +6,6 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 
 import Perfil from './screens/Perfil';
-import TestScreen2 from './screens/TestScreen2';
 import Agregar from './screens/Agregar';
 import Lista from './screens/Lista';
 import Ubicacion from './screens/Ubicacion';

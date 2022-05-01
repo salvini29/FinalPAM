@@ -22,7 +22,6 @@ import { useFocusEffect } from '@react-navigation/native';
 import { CommonActions, useNavigation } from '@react-navigation/native'
 import Swipeable from 'react-native-gesture-handler/Swipeable';
 import Perfil from './Perfil';
-import TestScreen2 from './TestScreen2';
 import Agregar from './Agregar';
 import Lista from './Lista';
 

@@ -23,7 +23,6 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useFocusEffect } from '@react-navigation/native';
 import { CommonActions, useNavigation } from '@react-navigation/native';
 import Perfil from './Perfil';
-import TestScreen2 from './TestScreen2';
 import Agregar from './Agregar';
 import Lista from './Lista';
 import { Platform, PermissionsAndroid } from 'react-native';
@@ -222,6 +221,16 @@ export default function Ubicacion ({ navigation }) {
           const cantLista = (JSON.parse(valueLista)).length;
           if (cantLista > 0) {
             console.log("Le falta quitar productos de la Lista y esta a mas de 1000 metros del super");
+            if(appState.current == 'active'){
+
+                Alert.alert(
+                "Alerta Olvidados",
+                "Se ha olvidado de comprar productos!",
+                [
+                  { text: "OK", onPress: () => console.log("Estoy volviendo") }
+                ]
+              );
+            }
           }
           else
           {

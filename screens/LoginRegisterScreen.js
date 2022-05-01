@@ -17,7 +17,6 @@ import {
 } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useForm } from 'react-hook-form';
-import TestScreen2 from './TestScreen2';
 import {connect} from 'react-redux';
 
 class LoginRegisterScreen extends React.Component {
@@ -82,7 +81,6 @@ class LoginRegisterScreen extends React.Component {
 
 		        	if( json == true )
 		        	{
-		        		//return this.props.navigation.navigate("TestScreen2");
 		        		this.props.estaLogeado();
 		        		return console.log("Pass correcta");
 		        	}
